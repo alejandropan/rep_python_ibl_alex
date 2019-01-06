@@ -12,13 +12,14 @@ import pandas as pd
 
 one = ONE(base_url='https://alyx.internationalbrainlab.org')
 
-weightings = pd.read_csv('C://Users/apv2/Documents/IBL/Dec2018_weightings.csv' )
+weightings = pd.read_csv('C://Users/apv2/Documents/IBL/Dec2018_weightings.csv' )###File with weights and dates. First column dates, thereafter 1 column per subject 
 
 
 # sub = one.alyx.rest('subjects', 'list', '?alive=True&project=ibl_zadorlab&water_restricted=True')
 
 dates = list(weightings.Date)
 
+sub = list(weightings)[1:]
 
 sub = ['ibl_witten_01',
        'ibl_witten_02',
