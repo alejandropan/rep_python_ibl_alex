@@ -21,9 +21,6 @@ dates = list(weightings.Date)
 
 sub = list(weightings)[1:]
 
-sub = ['ibl_witten_01',
-       'ibl_witten_02',
-       'ibl_witten_03']
 
 
 
